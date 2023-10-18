@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+from PIL import Image
 
 
 st.set_page_config(
@@ -88,7 +89,9 @@ elif(selected=="Projects"):
                 #maybe add an apk to itch
         st.write("Game page [link](https://cheeseburgerhere.itch.io/square-with-a-gun)")
         with st.expander("Screenshots from game: "):
-            st.image("Assets/SwGScr.png")
+            img=Image.open("Assets/SwGScr.png")
+            st.image(img)
+            #st.image("Assets/SwGScr.png")
 
     maps1.empty()
     maps2.empty()
