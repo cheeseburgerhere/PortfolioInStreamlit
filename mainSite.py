@@ -91,8 +91,7 @@ elif(selected=="Projects"):
         with st.expander("Screenshots from game: "):
          #   img=Image.open("Assets/SwGScr.png")
          #   st.image(img)
-            #st.image("Assets/SwGScr.png")
-            pass
+            st.image("Assets/SwGScr.png")
 
     maps1.empty()
     maps2.empty()
