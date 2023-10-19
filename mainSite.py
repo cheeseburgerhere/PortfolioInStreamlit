@@ -51,7 +51,7 @@ if(selected=="Home"):
     cols2.header("Python")
     st.caption("And some libraries of these")
     with cols4:
-        st.write("## Current year in Tobb Etü ")
+        st.write("## Current year in Tobb ETÜ ")
         st.metric(label="Year", value="1", delta="1 grade/year")
     cols1.empty()
     cols2.empty()
