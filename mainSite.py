@@ -88,9 +88,9 @@ elif(selected=="Projects"):
         st.text("Quick arcade game to pass time")
                 #maybe add an apk to itch
         st.write("Game page [link](https://cheeseburgerhere.itch.io/square-with-a-gun)")
-        with st.expander("Screenshots from game: "):
-            img=Image.open("Assets/SwGScr.png")
-            st.image(img)
+        #with st.expander("Screenshots from game: "):
+         #   img=Image.open("Assets/SwGScr.png")
+         #   st.image(img)
             #st.image("Assets/SwGScr.png")
 
     maps1.empty()
