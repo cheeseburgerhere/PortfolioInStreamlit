@@ -32,8 +32,8 @@ if(selected=="Home"):
         col2.markdown("---")
 
     abtMe="""\t I started programming in highscool when there were shutdowns due to pandemic. My projects consisted of 2 mobile games and 1 game jam game.
-    Now i am mostly interestedin artificial intelligence workfields. Thus i selected my major according to this. 
-    I want to mainly work on natural language processing image processing and other AI fields."""
+    Now i am mostly interested in artificial intelligence workfields and I selected my major according to this. 
+    I want to mainly work on natural language processing image processing and other AI fields or maybe other ones that I don't know about."""
     
     st.markdown("---")
     st.text(abtMe)
@@ -50,6 +50,14 @@ if(selected=="Home"):
     cols1.image("Assets/pythonlogo.png",width=90)
     cols2.header("Python")
     st.caption("And some libraries of these")
+    with cols4:
+        st.write("## Current year in Tobb Etü ")
+        st.metric(label="Year", value="1", delta="1 grade/year")
+    cols1.empty()
+    cols2.empty()
+    cols3.empty()
+    cols4.empty()
+    st.markdown("---")
  
 #end of if
 elif(selected=="Projects"):
@@ -61,11 +69,9 @@ elif(selected=="Projects"):
         st.header("Escape from Computer")
         st.caption("Featured")
         st.image("Assets/escBanner.png")
-        #zamanın kalırsa bunu fonksiyona çevir
     with map2:
         st.subheader("About: ")
         st.text("A platformer game with a short story and great athmosphere")
-                #maybe add an apk to itch
         st.write("Game page [link](https://cheeseburgerhere.itch.io/escape-from-computer)")
         with st.expander("Screenshots from game: "):
             scr1,scr2,scr3=st.columns(3)
@@ -84,7 +90,6 @@ elif(selected=="Projects"):
     with maps2:
         st.subheader("About: ")
         st.text("Quick arcade game to pass time")
-                #maybe add an apk to itch
         st.write("Game page [link](https://cheeseburgerhere.itch.io/square-with-a-gun)")
         with st.expander("Screenshots from game: "):
             st.image("Assets/SwgScr.png")
