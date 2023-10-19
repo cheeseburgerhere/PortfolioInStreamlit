@@ -51,7 +51,7 @@ if(selected=="Home"):
     cols2.header("Python")
     st.caption("And some libraries of these")
     with cols4:
-        st.write("## Current year in Tobb ETÜ ")
+        st.write("## Current year in Tobb Etü ")
         st.metric(label="Year", value="1", delta="1 grade/year")
     cols1.empty()
     cols2.empty()
@@ -112,10 +112,12 @@ elif(selected=="Contact"):
     st.title("My Contacts: ")
     c1,c2=st.columns(2)
     with c1:
+        st.markdown("---")
         st.subheader("[LinkedIn 🌐](https://www.linkedin.com/in/yasin-yesilyurt/)")
         st.markdown("---")
         st.subheader("[Github 💭](https://github.com/cheeseburgerhere)")
     with c2:
+        st.markdown("---")
         st.subheader("Personal Email 👓: yasinyesilyurt_@hotmail.com")
         st.markdown("---")
         st.subheader("Developer Email 👜: divisiondevelopment@hotmail.com")
