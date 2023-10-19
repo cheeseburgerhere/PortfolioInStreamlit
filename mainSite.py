@@ -1,6 +1,5 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from PIL import Image
 
 
 st.set_page_config(
@@ -23,7 +22,6 @@ if(selected=="Home"):
     col1,col2=st.columns([1,2])
     with st.container():
         col1.image("Assets/Illustration.png", width=300)
-        #col1.markdown("<h1 style='text-align: center; color: white;'>Yasin Yeşilyurt</h1>", unsafe_allow_html=True)
         col1.subheader("Yasin Yeşilyurt")
 
     with st.container():
@@ -89,8 +87,6 @@ elif(selected=="Projects"):
                 #maybe add an apk to itch
         st.write("Game page [link](https://cheeseburgerhere.itch.io/square-with-a-gun)")
         with st.expander("Screenshots from game: "):
-         #   img=Image.open("Assets/SwGScr.png")
-         #   st.image(img)
             st.image("Assets/SwgScr.png")
 
     maps1.empty()
@@ -112,8 +108,11 @@ elif(selected=="Contact"):
     c1,c2=st.columns(2)
     with c1:
         st.subheader("[LinkedIn 🌐](www.linkedin.com/in/yasin-yesilyurt)")
+        st.markdown("---")
         st.subheader("[Github 💭](https://github.com/cheeseburgerhere)")
     with c2:
         st.subheader("Personal Email 👓: yasinyesilyurt_@hotmail.com")
+        st.markdown("---")
         st.subheader("Developer Email 👜: divisiondevelopment@hotmail.com")
+        st.markdown("---")
         st.subheader("[Itch.io page 👾](https://cheeseburgerhere.itch.io/)")
