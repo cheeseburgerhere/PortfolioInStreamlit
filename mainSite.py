@@ -107,7 +107,7 @@ elif(selected=="Contact"):
     st.title("My Contacts: ")
     c1,c2=st.columns(2)
     with c1:
-        st.subheader("[LinkedIn 🌐](www.linkedin.com/in/yasin-yesilyurt)")
+        st.subheader("[LinkedIn 🌐](https://www.linkedin.com/in/yasin-yesilyurt/)")
         st.markdown("---")
         st.subheader("[Github 💭](https://github.com/cheeseburgerhere)")
     with c2:
